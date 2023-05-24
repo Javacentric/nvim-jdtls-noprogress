@@ -8,7 +8,7 @@ local URI_SCHEME_PATTERN = '^([a-zA-Z]+[a-zA-Z0-9+-.]*)://.*'
 
 local status_callback = function(_, result)
   -- api.nvim_command(string.format(':echohl Function | echo "%s" | echohl None', result.message))
-  api.nvim_command(string.format(':echo "Loading java definitions..."))
+  api.nvim_command(":echo 'Loading java definitions...'")
 end
 
 
