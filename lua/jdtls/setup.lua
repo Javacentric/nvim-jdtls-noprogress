@@ -246,7 +246,7 @@ function M.start_or_attach(config)
     or vim.fn.getcwd()
   )
   config.handlers = config.handlers or {}
-  config.handlers['language/status'] = status_callback
+  --config.handlers['language/status'] = status_callback
   config.handlers['workspace/configuration'] = config.handlers['workspace/configuration'] or configuration_handler
   local capabilities = vim.tbl_deep_extend('keep', config.capabilities or {}, lsp.protocol.make_client_capabilities())
   local extra_capabilities = {
